@@ -20,13 +20,25 @@ It accepts a destination from the user and returns:
 ## 🏗️ System Architecture
 
 ```
-User Input
-    ↓
-Parent Tourism Agent
-    ├── Weather Agent → Open-Meteo API
-    └── Places Agent → Nominatim + Overpass API
-    ↓
-Final Trip Response
+multi-agent-tourism-system-/
+│
+├── backend/
+│   ├── __pycache__/
+│   ├── fastapi_main.py        # FastAPI app & routes
+│   ├── parent_agent.py        # TourismAgent (orchestrator)
+│   ├── places_agent.py        # Places Agent (Overpass + Nominatim)
+│   ├── utils.py               # Geocoding helper (Nominatim)
+│   └── weather_agent.py       # Weather Agent (Open-Meteo)
+│
+├── documentation/
+│   ├── architecture_diagram.png
+│   └── report.pdf
+│
+├── frontend/
+│   └── streamlit_app.py       # Streamlit UI
+│
+└── README.md
+
 ```
 
 Architecture Diagram included: `architecture_diagram.png`
