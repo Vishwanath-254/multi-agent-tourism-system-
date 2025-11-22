@@ -64,6 +64,16 @@ Here are places you can visit:
 
 ---
 
+## DOMAIN LINK
+Install ngrok 
+Link: https://ngrok.com/download/windows?tab=download
+Switch to the downloded directory of the ngrok
+Sign in at ngrok.com → copy your auth token
+Then run:ngrok config add-authtoken YOUR_TOKEN_HERE
+Next run : ngrok http 8501
+
+
+
 ## 📜 License
 MIT License
 
